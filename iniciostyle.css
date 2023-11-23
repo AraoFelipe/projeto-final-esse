@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+:root{
+    --font1:'Staatliches', sans-serif;
+}
+
+body {
+    background-image: url('fotos/foto inicio.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center center ;
+    margin: 0;
+    padding: 0;
+    font-size: x-large;
+}
+
+
+
+header {
+   
+    
+    text-align: center;
+    padding: 20px;
+
+}
+
+#conteudo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+
+.pagina-inicial {
+    background-image: 
+    url('imagens/Foto\ do\ teclado.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+button {
+    box-shadow: 15px ;  
+    background-color:red;
+     font-family:var(--font1);
+     font-size: x-large;
+     color: yellow;
+     padding: 50px 150px;
+     border: none;
+     border-radius: 35px;
+    cursor: pointer;
+    
+}
+
+button:hover {
+    background-color: yellow;
+    color: red;
+}

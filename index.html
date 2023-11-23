@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/gh/neocotic/qrious@4.0.2/build/qrious.min.js"></script>
+    <title id="titulo">Senai Burguer´s</title>
+</head>
+<body>
+    <header class="frase-inicio">
+        <h1>Deliciosos Hambúrgueres</h1>
+        <p>Sua melhor escolha para uma refeição saborosa!</p>
+    </header>
+
+    <section id="conteudo">
+        <aside id="barra-lateral">
+            <h2>Categorias</h2>
+            <ul>
+                <li><a href="#" onclick="exibirProdutos('hamburguer')">Hambúrgueres</a></li>
+                <li><a href="#" onclick="exibirProdutos('batatafrita')">Batatas Fritas</a></li>
+                <li><a href="#" onclick="exibirProdutos('milkshake')">Milkshakes</a></li>
+                <li><a href="#" onclick="exibirProdutos('bebida')">Bebidas</a></li>
+            </ul>
+        </aside>
+
+        <main>
+            <section id="produtos">
+               
+            </section>
+        </main>
+
+        <section id="carrinho">
+            <h2>Carrinho de Compras</h2>
+            <ul id="itens-carrinho"></ul>
+            <p id="total-carrinho">Total: R$ 0.00</p>
+            <button onclick="finalizarCompra()">Finalizar Compra</button>
+        </section>
+        
+        <div id="qrcode"></div>
+        <footer>
+            <p>Siga-nos nas redes sociais:</p>
+            <div>
+                <a href="https://www.linkedin.com/in/ar%C3%A3o-felipe-pires-571637146/" target="_blank">Linkedin</a>
+                <a href="https://github.com/AraoFelipe/AraoFelipe" target="_blank">GitHub</a>
+            </div>
+        </footer>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

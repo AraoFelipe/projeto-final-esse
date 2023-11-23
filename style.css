@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+:root{
+    --font1:'Staatliches', sans-serif;
+}
+body {
+    background-image:url('fotos/Foto do teclado.jpg') ;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.frase-inicio{
+    font-family: var(--font1);
+
+}
+
+header {
+   
+    text-align: center;
+    padding: 30px;
+    position:static;
+   
+}
+header h1{
+    box-shadow: 15px;
+    text-align: center;
+    color: red;
+}
+header p{
+    text-align: center;
+    color: yellow;
+    font-size: larger;
+}
+
+#conteudo {
+    display: flex;
+}
+
+#barra-lateral {
+    border: 2px solid yellow;
+    border-radius: 15px;
+    width: 20%;
+    padding: 20px;
+}
+
+#barra-lateral h2 {
+   
+    color:red;
+    font-family: var(--font1);
+}
+
+#barra-lateral ul {
+    
+    list-style: none;
+    padding: 0;
+}
+
+#barra-lateral li {
+    margin-bottom: 25px;
+    
+}
+
+#barra-lateral a {
+    font-family: var(--font1);
+    text-decoration: none;
+    color: yellow;
+    font-weight: bolder;
+}
+
+#barra-lateral a:hover {
+    color: yellow;
+}
+
+main {
+    flex: 1;
+    padding: 15px;
+    background-size: cover;
+    background-position: center;
+}
+
+#produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.produto {
+    border: 2px solid red;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    background-color:white;
+}
+
+.produto img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+button {
+    background-color: red;
+    color: yellow;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+ 
+}
+
+button:hover {
+    color: red;
+    background-color:yellow;
+}
+
+#carrinho {
+    font-family: var(--font1);
+    color: yellow;
+    width: 200px;
+    padding: 20px;
+    border: 2px solid yellow;
+    border-radius: 8px ;
+    position: sticky;
+    top: 0;
+}
+
+#itens-carrinho {
+    color: yellow;
+    list-style: none;
+    padding: 0;
+}
+
+#itens-carrinho li {
+    color: yellow;
+    border-bottom: 1px solid white ;
+    padding: 10px;
+}
+
+#total-carrinho {
+    color: yellow;
+    font-weight: bold;
+}
+
+#qrcode {
+    margin-top: 20px;
+    text-align: center;
+}
+footer {
+    background-color: #333;
+    
+   
+color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+footer {
+    position: static;
+}
+
+@media (min-width: 500px) {
+
+    header{
+        position: relative;
+    }
+
+    footer {
+        position: fixed;
+    }
+   
+}
